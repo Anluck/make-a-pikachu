@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-wrapper,
+.preview-wrapper {
+  flex: 1;
+  height: 50%;
+}
+
+#code {
+  height: 100%;
+  overflow: auto;
+  background: #2e2e2e;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  height: 190px;
+  position: relative;
+}
+
+.token.selector {
+  color: #f35656;
+}
+
+.token.property {
+  color: #f0da5e;
+}
+
+.token.comment {
+  color: #cccccc;
+}
+
+.button-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper button{
+  outline: none;
+  margin: 10px 25px 0 0;
+  padding: 3px 9px;
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-wrapper button.active{
+  background: #fee22d;
+  border: 1px solid #ffed79;
+}
